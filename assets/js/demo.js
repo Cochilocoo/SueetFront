@@ -146,10 +146,36 @@ demo = {
         Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences);
 
         Chartist.Pie('#chartPreferences', {
-          labels: ['62%','32%','6%'],
-          series: [62, 32, 6]
+          labels: ['60%','40%'],
+          series: [60, 40]
         });
 
+        /*  **************** Public Preferences - Pie Chart ******************** */
+
+        var dataPreferences2 = {
+            series: [
+                [25, 30, 20, 25]
+            ]
+        };
+
+        var optionsPreferences2 = {
+            donut: true,
+            donutWidth: 40,
+            startAngle: 0,
+            height: "245px",
+            total: 100,
+            showLabel: false,
+            axisX: {
+                showGrid: false
+            }
+        };
+
+        Chartist.Pie('#chartPreferences2', dataPreferences2, optionsPreferences2);
+
+        Chartist.Pie('#chartPreferences2', {
+          labels: ['40%','60%'],
+          series: [40, 60]
+        });
 
         /*  **************** Views  - barchart ******************** */
 
@@ -241,8 +267,8 @@ demo = {
         Chartist.Pie('#chartEmail', dataPreferences, optionsPreferences);
 
         Chartist.Pie('#chartEmail', {
-          labels: ['62%','32%','6%'],
-          series: [62, 32, 6]
+          labels: ['60%','40%'],
+          series: [60, 30]
         });
 
 
