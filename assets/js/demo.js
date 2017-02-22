@@ -346,7 +346,7 @@ demo = {
     initSmallGoogleMaps: function(){
 
         // Regular Map
-        var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
+        var myLatlng = new google.maps.LatLng(22.1495788,-100.9874576);
         var mapOptions = {
             zoom: 8,
             center: myLatlng,

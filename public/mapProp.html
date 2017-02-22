@@ -186,7 +186,9 @@
                             </div>
 
                             </br>
-                            <!-- AQUI VA EL MAPA :v -->
+                            <div class="content">
+                                <div id="regularMap" class="map"></div>
+                            </div>
                             </br>
 
                         </div><!--  end card  -->
@@ -289,5 +291,11 @@
 
 	<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
 	<script src="../assets/js/demo.js"></script>
+
+    <script>
+        $().ready(function(){
+            demo.initSmallGoogleMaps();
+        });
+    </script>
 
 </html>

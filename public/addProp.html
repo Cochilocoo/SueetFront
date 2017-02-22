@@ -260,7 +260,11 @@
                                     </div>
                                 </div>
 
-                                <!-- Falta el mapa aqui -->
+                                <div class="form-group">
+                                    <div class="col-sm-10 col-md-offset-2">
+                                        <div id="regularMap" class="map"></div>
+                                    </div>
+                                </div>
 
                                 <div class="form-group">  <!-- Modify so that # changes auto -->
                                     <label class="col-sm-2 control-label">Sección 1</label>
@@ -407,5 +411,11 @@
 
 	<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
 	<script src="../assets/js/demo.js"></script>
+
+    <script>
+        $().ready(function(){
+            demo.initSmallGoogleMaps();
+        });
+    </script>
 
 </html>
