@@ -5,7 +5,7 @@
 	<link rel="icon" type="image/png" href="../assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Sueet - Ver Propiedades</title>
+	<title>Sueet - Dashboard</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -32,10 +32,8 @@
 <div class="wrapper">
     <div class="sidebar" data-color="gray" data-image="../assets/img/apartment-image.jpg">
 
-        <div class="logo">
-            <a href="#" class="logo-text">
-                Sueet
-            </a>
+        <div class="logo text-center">
+            <img  style="height: 40px; width: 80px;" src="../assets/img/2-horizontal-gris.png" />
         </div>
 		<div class="logo logo-mini">
 			<a href="#" class="logo-text">
@@ -109,7 +107,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Propiedades</a>
+                    <a class="navbar-brand" href="#">Dashboard</a>
                 </div>
                 <div class="collapse navbar-collapse">
 
@@ -176,101 +174,131 @@
             <div class="container-fluid">
 
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="header">
-                                <button class="btn btn-wd">Agregar Propiedad</button>
-                                <button class="btn btn-danger btn-fill btn-wd">Todas las Propiedades</button>
-                                <button class="btn btn-wd btn-info pull-right">Ver Mapa</button>
-                                <br />
-                            </div>
-                            <div class="content table-responsive table-full-width">
-                                <table class="table table-bigboy">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center">Imagen</th>
-                                            <th class="text-center">Nombre</th>
-                                            <th class="text-center">Dirección</th>
-                                            <th class="text-center">Responsable</th>
-                                            <th class="text-center">Acción</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="img-container">
-                                                    <img src="../assets/img/prop-1.jpg" alt="Propiedad 1">
-                                                </div>
-                                            </td>
-                                            <td class="text-center td-name">
-                                                Masaryk 326
-                                            </td>
-                                            <td>
-                                                Av. Presidente Masaryk #326, Col. Polanco, Miguel Hidalgo 11510, CDMX
-                                            </td>
-                                            <td class="td-number">Sergio López</td>
-                                            <td class="td-actions">
-                                                <button type="button" rel="tooltip" data-placement="left" title="Editar" class="btn btn-success btn-simple btn-icon">
-                                                    <i class="fa fa-edit"></i>
-                                                </button>
-                                                <button type="button" rel="tooltip" data-placement="left" title="Borrar" class="btn btn-danger btn-simple btn-icon ">
-                                                    <i class="fa fa-times"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>
-                                                <div class="img-container">
-                                                    <img src="../assets/img/prop-2.jpg" alt="Propiedad 2">
-                                                </div>
-                                            </td>
-                                            <td class="text-center td-name">
-                                                Plaza Polanco
-                                            </td>
-                                            <td>
-                                                Av. Homero # 1156, Col. Polanco, Miguel Hidalgo 11520, CDMX
-                                            </td>
-                                            <td class="td-number">Pilar Torres</td>
-                                            <td class="td-actions">
-                                                <button type="button" rel="tooltip" data-placement="left" title="Editar" class="btn btn-success btn-simple btn-icon">
-                                                    <i class="fa fa-edit"></i>
-                                                </button>
-                                                <button type="button" rel="tooltip" data-placement="left" title="Borrar" class="btn btn-danger btn-simple btn-icon ">
-                                                    <i class="fa fa-times"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
 
-                                        <tr>
-                                            <td>
-                                                <div class="img-container">
-                                                    <img src="../assets/img/prop-3.jpg" alt="Propiedad 3">
-                                                </div>
-                                            </td>
-                                            <td class="text-center td-name">
-                                                División 77
-                                            </td>
-                                            <td>
-                                                Av. División del Norte # 77, Col. Del Valle, Benito Juárez 03880, CDMX
-                                            </td>
-                                            <td class="td-number">Pilar Torres</td>
-                                            <td class="td-actions">
-                                                <button type="button" rel="tooltip" data-placement="left" title="Editar" class="btn btn-success btn-simple btn-icon">
-                                                    <i class="fa fa-edit"></i>
-                                                </button>
-                                                <button type="button" rel="tooltip" data-placement="left" title="Borrar" class="btn btn-danger btn-simple btn-icon ">
-                                                    <i class="fa fa-times"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="nav-container">
+                            <ul class="nav nav-icons" role="tablist">
+                                <li class="active">
+                                    <a href="#description-logo" role="tab" data-toggle="tab">
+                                        <i class="fa fa-bed"></i><br>
+                                        Unidades
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#map-logo" role="tab" data-toggle="tab">
+                                        <i class="fa fa-users"></i><br>
+                                        Residentes
+                                    </a>
+                                  </li>
+                                <li class="">
+                                    <a href="#legal-logo" role="tab" data-toggle="tab">
+                                        <i class="fa fa-comments"></i><br>
+                                        Comunicación
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#help-logo" role="tab" data-toggle="tab">
+                                        <i class="fa fa-bell"></i><br>
+                                        Solicitudes
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#description-logo" role="tab" data-toggle="tab">
+                                        <i class="fa fa-usd"></i><br>
+                                        Cuotas
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#description-logo" role="tab" data-toggle="tab">
+                                        <i class="fa fa-trophy"></i><br>
+                                        Amenidades
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#description-logo" role="tab" data-toggle="tab">
+                                        <i class="fa fa-file-text"></i><br>
+                                        Documentos
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#description-logo" role="tab" data-toggle="tab">
+                                        <i class="fa fa-calendar"></i><br>
+                                        Calendario
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#description-logo" role="tab" data-toggle="tab">
+                                        <i class="fa fa-id-card"></i><br>
+                                       Empleados
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-                                    </tbody>
-                                </table>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="description-logo">
+                                <div class="card">
+                                    <div class="header">
+                                        <h4 class="title">Description about product</h4>
+                                        <p class="category">More information here</p>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
+                                        <p>The first thing you notice when you hold the phone is how great it feels in your hand. There are no distinct edges. No gaps. Just a smooth, seamless bond of metal and glass that feels like one continuous surface.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div><!--  end card  -->
-                    </div> <!-- end col-md-12 -->
-                </div>
+
+
+                            <div class="tab-pane" id="map-logo">
+                                <div class="card">
+                                    <div class="header">
+                                        <h4 class="title">Location of product</h4>
+                                        <p class="category">Here is some text</p>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>Another Text. The first thing you notice when you hold the phone is how great it feels in your hand. The cover glass curves down around the sides to meet the anodized aluminum enclosure in a remarkable, simplified design.</p>
+                                        <p>Larger, yet dramatically thinner.It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane" id="legal-logo">
+                                <div class="card">
+                                    <div class="header">
+                                        <h4 class="title">Legal items</h4>
+                                        <p class="category">More information here</p>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>The first thing you notice when you hold the phone is how great it feels in your hand. The cover glass curves down around the sides to meet the anodized aluminum enclosure in a remarkable, simplified design.</p>
+                                        <p>Larger, yet dramatically thinner.It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="help-logo">
+                                <div class="card">
+                                    <div class="header">
+                                        <h4 class="title">Help center</h4>
+                                        <p class="category">More information here</p>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>From the seamless transition of glass and metal to the streamlined profile, every detail was carefully considered to enhance your experience. So while its display is larger, the phone feels just right.</p>
+                                        <p>Another Text. The first thing you notice when you hold the phone is how great it feels in your hand. The cover glass curves down around the sides to meet the anodized aluminum enclosure in a remarkable, simplified design.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <!-- end tab content -->
+
+                    </div> <!-- end col-md-8 -->
+
+                </div><!-- end row -->
 
             </div>
         </div>
