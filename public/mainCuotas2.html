@@ -242,15 +242,15 @@
                                 <div class="card">
 
                                     <div class="toolbar text-center">
-                                        <button style="margin-right: 10px;" class="btn btn-wd btn-fill">Agregar Cuota</button>
+                                        <!-- Add if necessary -->
                                     </div>
 
                                     <table id="bootstrap-table" class="table">
                                         <thead>
-                                            <th data-field="name" class="text-center">Cuota</th>
+                                            <th data-field="name" class="text-center">Unidad</th>
                                             <th data-field="balance" data-sortable="true" class="text-center">Saldo</th>
                                             <th data-field="ammount" data-sortable="true" class="text-center">Monto</th>
-                                            <th data-field="period" class="text-center">Periodo</th>
+                                            <th data-field="period" class="text-center">Último Pago</th>
                                             <th data-field="actions" class="td-actions text-right" data-events="operateEvents" data-formatter="operateFormatter">Acción</th>
                                         </thead>
                                         <tbody>
@@ -258,28 +258,28 @@
                                                 <td>Mantenimiento</td>
                                                 <td class="text-danger text-center">-$258.00</td>
                                                 <td>$258</td>
-                                                <td>Mensual</td>
+                                                <td>14/Noviembre/2016</td>
                                                 <td></td>
                                             </tr>
                                             <tr>
                                                 <td>Rentas</td>
                                                 <td class="text-danger text-center">-$8500.00</td>
                                                 <td>$8500</td>
-                                                <td>Mensual</td>
+                                                <td>4/Diciembre/2016</td>
                                                 <td></td>
                                             </tr>
                                             <tr>
                                                 <td>Otras</td>
-                                                <td class="text-danger text-center">-$2500.00</td>
+                                                <td>-</td>
                                                 <td>$500</td>
-                                                <td>Semestral</td>
+                                                <td>5/Enero/2017</td>
                                                 <td></td>
                                             </tr>
                                             <tr>
                                                 <td>Extraordinarias</td>
-                                                <td class="text-danger text-center">-$405.00</td>
+                                                <td></td>
                                                 <td>$45</td>
-                                                <td>Extraordinario</td>
+                                                <td>11/Enero/2017</td>
                                                 <td></td>
                                             </tr>
                                         </tbody>
@@ -396,14 +396,11 @@
         function operateFormatter(value, row, index) {
             return [
                 '<a rel="tooltip" title="View" class="btn btn-simple btn-info btn-icon table-action view" href="javascript:void(0)">',
-                    '<i class="fa fa-home"></i>',
+                    '<i class="fa fa-search"></i>',
                 '</a>',
                 '<a rel="tooltip" title="Edit" class="btn btn-simple btn-warning btn-icon table-action edit" href="javascript:void(0)">',
                     '<i class="fa fa-edit"></i>',
                 '</a>',
-                '<a rel="tooltip" title="Remove" class="btn btn-simple btn-danger btn-icon table-action remove" href="javascript:void(0)">',
-                    '<i class="fa fa-remove"></i>',
-                '</a>'
             ].join('');
         }
 
@@ -421,13 +418,6 @@
                     swal('You click edit icon, row: ', info);
                     console.log(info);
                 },
-                'click .remove': function (e, value, row, index) {
-                    console.log(row);
-                    $table.bootstrapTable('remove', {
-                        field: 'id',
-                        values: [row.id]
-                    });
-                }
             };
 
             $table.bootstrapTable({
