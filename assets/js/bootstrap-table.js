@@ -397,11 +397,11 @@
         formatRecordsPerPage: function (pageNumber) {
             return sprintf('%s records per page', pageNumber);
         },
-        formatShowingRows: function (pageFrom, pageTo, totalRows) {
+        formatShowingRows: function (pageFrom, pageTo, tRows) {
             return sprintf('Showing %s to %s of %s rows', pageFrom, pageTo, totalRows);
         },
         formatSearch: function () {
-            return 'Search';
+            return 'Buscar';
         },
         formatNoMatches: function () {
             return 'No matching records found';
