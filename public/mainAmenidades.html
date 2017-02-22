@@ -5,7 +5,7 @@
 	<link rel="icon" type="image/png" href="../assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Sueet - Solicitudes</title>
+	<title>Sueet - Ver Propiedades</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -32,8 +32,10 @@
 <div class="wrapper">
     <div class="sidebar" data-color="gray" data-image="../assets/img/apartment-image.jpg">
 
-        <div class="logo text-center">
-            Sueet
+        <div class="logo">
+            <a href="#" class="logo-text">
+                Sueet
+            </a>
         </div>
 		<div class="logo logo-mini">
 			<a href="#" class="logo-text">
@@ -107,7 +109,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Dashboard</a>
+                    <a class="navbar-brand" href="#">Propiedades</a>
                 </div>
                 <div class="collapse navbar-collapse">
 
@@ -174,8 +176,8 @@
             <div class="container-fluid">
 
                 <div class="row">
-
                     <div class="col-md-12">
+
                         <div class="nav-container">
                             <ul class="nav nav-icons" role="tablist">
                                 <li class="">
@@ -196,7 +198,7 @@
                                         Comunicación
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li class="">
                                     <a href="" role="tab" data-toggle="tab">
                                         <i class="fa fa-bell"></i><br>
                                         Solicitudes
@@ -208,7 +210,7 @@
                                         Cuotas
                                     </a>
                                 </li>
-                                <li class="">
+                                <li class="active">
                                     <a href="" role="tab" data-toggle="tab">
                                         <i class="fa fa-trophy"></i><br>
                                         Amenidades
@@ -238,103 +240,112 @@
                         <div class="tab-content">
                             
                             <div class="tab-pane active" id="description">
-                                
+
                                 <div class="card">
-
-                                    <div class="toolbar text-center">
-                                        <!-- Add more as needed -->
+                                    
+                                    <div class="content table-responsive table-full-width" style="padding-top: 0px;">
+                                        <table class="table table-bigboy">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center">
+                                                    <button class="btn btn-wd btn-fill">Agregar Amenidad</button>
+                                                    </th>
+                                                    <th class="text-center">Nombre</th>
+                                                    <th class="text-center">Descripción</th>
+                                                    <th class="text-center">Horario</th>
+                                                    <th class="text-center">Calendario</th>
+                                                    <th class="text-center">Acción</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div style="margin: auto;" class="img-container">
+                                                            <img src="../assets/img/prop-1.jpg" alt="Amenidad">
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">Alberca</td>
+                                                    <td class="text-center">
+                                                        6 carriles, Largo 25m,<br/> Profundidad de 130cm
+                                                    </td>
+                                                    <td class="text-center">06:00 – 23:00</td>
+                                                    <td class="text-center">
+                                                        <a href="#">
+                                                            <i class="fa fa-calendar fa-2x"></i><br>
+                                                            Ver Calendario
+                                                        </a>
+                                                    </td>
+                                                    <td class="td-actions">
+                                                        <button type="button" rel="tooltip" data-placement="left" title="Editar" class="btn btn-success btn-simple btn-icon">
+                                                            <i class="fa fa-edit"></i>
+                                                        </button>
+                                                        <button type="button" rel="tooltip" data-placement="left" title="Borrar" class="btn btn-danger btn-simple btn-icon ">
+                                                            <i class="fa fa-times"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div style="margin: auto;" class="img-container">
+                                                            <img src="../assets/img/prop-1.jpg" alt="Amenidad">
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">Cine</td>
+                                                    <td class="text-center">
+                                                        12 butacas, Pantalla 120”<br/>Proyector Led, Sonido Dolby
+                                                    </td>
+                                                    <td class="text-center">08:00 – 1:00</td>
+                                                    <td class="text-center">
+                                                        <a href="#">
+                                                            <i class="fa fa-calendar fa-2x"></i><br>
+                                                            Ver Calendario
+                                                        </a>
+                                                    </td>
+                                                    <td class="td-actions">
+                                                        <button type="button" rel="tooltip" data-placement="left" title="Editar" class="btn btn-success btn-simple btn-icon">
+                                                            <i class="fa fa-edit"></i>
+                                                        </button>
+                                                        <button type="button" rel="tooltip" data-placement="left" title="Borrar" class="btn btn-danger btn-simple btn-icon ">
+                                                            <i class="fa fa-times"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div style="margin: auto;" class="img-container">
+                                                            <img src="../assets/img/prop-1.jpg" alt="Amenidad">
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">Gimnasio</td>
+                                                    <td class="text-center">
+                                                        6 caminadoras, 3, bicicletas<br/>equipo de ejercicio funcional
+                                                    </td>
+                                                    <td class="text-center">06:00 – 23:00</td>
+                                                    <td class="text-center">
+                                                        <a href="#">
+                                                            <i class="fa fa-calendar fa-2x"></i><br>
+                                                            Ver Calendario
+                                                        </a>
+                                                    </td>
+                                                    <td class="td-actions">
+                                                        <button type="button" rel="tooltip" data-placement="left" title="Editar" class="btn btn-success btn-simple btn-icon">
+                                                            <i class="fa fa-edit"></i>
+                                                        </button>
+                                                        <button type="button" rel="tooltip" data-placement="left" title="Borrar" class="btn btn-danger btn-simple btn-icon ">
+                                                            <i class="fa fa-times"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                
+                                            </tbody>
+                                        </table>
                                     </div>
-
-                                    <table id="bootstrap-table" class="table">
-                                        <thead>
-                                            <th data-field="photo" class="text-center">Foto</th>
-                                            <th data-field="name" data-sortable="true" class="text-center">Residente</th>
-                                            <th data-field="place" data-sortable="true" class="text-center">Unidad</th>
-                                            <th data-field="title" class="text-center">Asunto</th>
-                                            <th data-field="description" class="text-center">Descripción</th>
-                                            <th data-field="actions" class="td-actions text-right" data-events="operateEvents" data-formatter="operateFormatter">Acción</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <img width="40px" height="40px" src="../assets/img/face-0.jpg" />
-                                                </td>
-                                                <td>John Doe</td>
-                                                <td>Sección-Número</td>
-                                                <td>Asunto</td>
-                                                <td>Breve descripción...</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <img width="40px" height="40px" src="../assets/img/face-0.jpg" />
-                                                </td>
-                                                <td>John Doe</td>
-                                                <td>Sección-Número</td>
-                                                <td>Asunto</td>
-                                                <td>Breve descripción...</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <img width="40px" height="40px" src="../assets/img/face-0.jpg" />
-                                                </td>
-                                                <td>John Doe</td>
-                                                <td>Sección-Número</td>
-                                                <td>Asunto</td>
-                                                <td>Breve descripción...</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <img width="40px" height="40px" src="../assets/img/face-0.jpg" />
-                                                </td>
-                                                <td>John Doe</td>
-                                                <td>Sección-Número</td>
-                                                <td>Asunto</td>
-                                                <td>Breve descripción...</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <img width="40px" height="40px" src="../assets/img/face-0.jpg" />
-                                                </td>
-                                                <td>John Doe</td>
-                                                <td>Sección-Número</td>
-                                                <td>Asunto</td>
-                                                <td>Breve descripción...</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <img width="40px" height="40px" src="../assets/img/face-0.jpg" />
-                                                </td>
-                                                <td>John Doe</td>
-                                                <td>Sección-Número</td>
-                                                <td>Asunto</td>
-                                                <td>Breve descripción...</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <img width="40px" height="40px" src="../assets/img/face-0.jpg" />
-                                                </td>
-                                                <td>John Doe</td>
-                                                <td>Sección-Número</td>
-                                                <td>Asunto</td>
-                                                <td>Breve descripción...</td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
                                 </div><!--  end card  -->
 
                             </div>
-                        </div> <!-- end tab content -->
-
+                        </div><!--  end cpane  -->
                     </div> <!-- end col-md-12 -->
-
-                </div><!-- end row -->
+                </div>
 
             </div>
         </div>
@@ -433,82 +444,4 @@
 	<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
 	<script src="../assets/js/demo.js"></script>
 
-    <script type="text/javascript">
-        var $table = $('#bootstrap-table');
-
-        function operateFormatter(value, row, index) {
-            return [
-                '<a rel="tooltip" title="View" class="btn btn-simple btn-info btn-icon table-action view" href="javascript:void(0)">',
-                    '<i class="fa fa-image"></i>',
-                '</a>',
-                '<a rel="tooltip" title="Edit" class="btn btn-simple btn-warning btn-icon table-action edit" href="javascript:void(0)">',
-                    '<i class="fa fa-edit"></i>',
-                '</a>',
-                '<a rel="tooltip" title="Remove" class="btn btn-simple btn-danger btn-icon table-action remove" href="javascript:void(0)">',
-                    '<i class="fa fa-remove"></i>',
-                '</a>'
-            ].join('');
-        }
-
-        $().ready(function(){
-            window.operateEvents = {
-                'click .view': function (e, value, row, index) {
-                    info = JSON.stringify(row);
-
-                    swal('You click view icon, row: ', info);
-                    console.log(info);
-                },
-                'click .edit': function (e, value, row, index) {
-                    info = JSON.stringify(row);
-
-                    swal('You click edit icon, row: ', info);
-                    console.log(info);
-                },
-                'click .remove': function (e, value, row, index) {
-                    console.log(row);
-                    $table.bootstrapTable('remove', {
-                        field: 'id',
-                        values: [row.id]
-                    });
-                }
-            };
-
-            $table.bootstrapTable({
-                toolbar: ".toolbar",
-                showRefresh: true,
-                search: true,
-                showToggle: true,
-                showColumns: true,
-                pagination: true,
-                searchAlign: 'left',
-                pageSize: 5,
-                clickToSelect: false,
-                pageList: [5,10,15],
-
-                formatShowingRows: function(pageFrom, pageTo, totalRows){
-                    //do nothing here, we don't want to show the text "showing x of y from..."
-                },
-                formatRecordsPerPage: function(pageNumber){
-                    return pageNumber + " rows visible";
-                },
-                icons: {
-                    refresh: 'fa fa-refresh',
-                    toggle: 'fa fa-th-list',
-                    columns: 'fa fa-columns',
-                    detailOpen: 'fa fa-plus-circle',
-                    detailClose: 'fa fa-minus-circle'
-                }
-            });
-
-            //activate the tooltips after the data table is initialized
-            $('[rel="tooltip"]').tooltip();
-
-            $(window).resize(function () {
-                $table.bootstrapTable('resetView');
-            });
-
-
-        });
-
-    </script>
 </html>
