@@ -5,7 +5,7 @@
 	<link rel="icon" type="image/png" href="../assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Sueet - Agregar Rol</title>
+	<title>Sueet - Agregar Empleado</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -178,54 +178,46 @@
 
                 <div class="card">
                     <div class="header">
-                        <legend>Crear Rol</legend>
+                        <legend>Agregar Empleado</legend>
                     </div>
                     <div class="content">
                         <form method="get" action="/" class="form-horizontal">
 
                             <fieldset>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Rol</label>
+                                    <label class="col-sm-2 control-label">Empleado</label>
                                     <div class="col-sm-10">
-                                        <select name="roles" class="selectpicker" data-title="Seleccionar Rol" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
-                                                <option value="id1">Admin</option>
-                                                <option value="id2">Operator</option>
-                                                <option value="id3">Service</option>
+                                        <select name="roles" class="selectpicker" data-title="Seleccionar Empleado" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
+                                                <option value="id1">Empleado #1</option>
+                                                <option value="id2">Empleado #2</option>
+                                                <option value="id3">Empleado #3</option>
                                         </select>
+                                        <span class="help-block">Utilizar en caso que el empleado provenga de otra propiedad.</span>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Tipo</label>
-                                    <div class="col-sm-3">
-                                        <label class="checkbox">
-                                            <input type="checkbox" data-toggle="checkbox" value="option1">Propiedades
-                                        </label>
-                                        <label class="checkbox">
-                                            <input type="checkbox" data-toggle="checkbox" value="option2">Empleados
-                                        </label>
-                                        <label class="checkbox">
-                                            <input type="checkbox" data-toggle="checkbox" value="option1">Mensajes
-                                        </label>
+                                    <label class="col-sm-2 control-label">Nombre</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" placeholder="Ingresa el nombre del empleado" class="form-control">
                                     </div>
-                                    <div class="col-sm-7">
-                                        <label class="checkbox">
-                                            <input type="checkbox" data-toggle="checkbox" value="option2">Documentos
-                                        </label>
-                                        <label class="checkbox">
-                                            <input type="checkbox" data-toggle="checkbox" value="option1">Solicitudes
-                                        </label>
-                                    </div>
-                                </div>        
+                                </div>
 
                                 <div class="form-group">
-                                    <label class="col-sm-5 col-sm-offset-1 control-label">Rol disponible en todas las propiedades</label>
-                                    <div class="col-sm-2 col-sm-offset-1">
-                                        <div class="switch"
-                                             data-on-label=""
-                                             data-off-label="">
-                                             <input type="checkbox" checked/>
-                                        </div>
+                                    <label class="col-sm-2 control-label">E-Mail</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" placeholder="Ingresa el correo electrónico" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Rol</label>
+                                    <div class="col-sm-10">
+                                        <select name="roles" class="selectpicker" data-title="Seleccionar Rol" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
+                                                <option value="id4">Admin</option>
+                                                <option value="id5">Operator</option>
+                                                <option value="id6">Service</option>
+                                        </select>
                                     </div>
                                 </div>
 
