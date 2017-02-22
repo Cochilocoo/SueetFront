@@ -238,26 +238,85 @@
                         <div class="tab-content">
                             
                             <div class="tab-pane active" id="description">
+                                
                                 <div class="card">
+
                                     <div class="toolbar">
-                                <!--        Here you can write extra buttons/actions for the toolbar              -->
+                                        <!--        Here you can write extra buttons/actions for the toolbar              -->
+                                    </div>
+
+                                    <table id="bootstrap-table" class="table">
+                                        <thead>
+                                            <th data-field="name" data-sortable="true" class="text-center">Nombre</th>
+                                            <th data-field="balance" data-sortable="true" class="text-center">Saldo</th>
+                                            <th data-field="actions" class="td-actions text-right" data-events="operateEvents" data-formatter="operateFormatter">Actions</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Torre A - 01</td>
+                                                <td class="text-danger text-center">-$123.00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Torre A - 02</td>
+                                                <td>-</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Torre A - 03</td>
+                                                <td>-</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Torre B - 01</td>
+                                                <td>-</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Torre B - 02</td>
+                                                <td class="text-danger text-center">-$67.00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Torre B - 03</td>
+                                                <td>-</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Torre C - 01</td>
+                                                <td>-</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Torre C - 02</td>
+                                                <td>-</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Torre C - 03</td>
+                                                <td class="text-danger text-center">-$89.00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Torre D - 01</td>
+                                                <td class="text-danger text-center">-$123.45</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Torre D - 02</td>
+                                                <td>-</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Torre D - 03</td>
+                                                <td>-</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><!--  end card  -->
+
                             </div>
-
-                            <table id="bootstrap-table" class="table">
-                                <thead>
-                                    <th data-field="id" class="text-center">Nombre</th>
-                                    <th data-field="name" data-sortable="true">Saldo</th>
-                                    <th data-field="actions" class="td-actions text-right" data-events="operateEvents" data-formatter="operateFormatter">Actions</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Torre A - 01</td>
-                                        <td>- $123.45</td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
                         </div> <!-- end tab content -->
 
                     </div> <!-- end col-md-10 -->
@@ -377,12 +436,6 @@
 
         $().ready(function(){
             window.operateEvents = {
-                'click .view': function (e, value, row, index) {
-                    info = JSON.stringify(row);
-
-                    swal('You click view icon, row: ', info);
-                    console.log(info);
-                },
                 'click .edit': function (e, value, row, index) {
                     info = JSON.stringify(row);
 
@@ -400,16 +453,15 @@
 
             $table.bootstrapTable({
                 toolbar: ".toolbar",
-                clickToSelect: true,
                 showRefresh: true,
                 search: true,
                 showToggle: true,
                 showColumns: true,
                 pagination: true,
                 searchAlign: 'left',
-                pageSize: 8,
+                pageSize: 5,
                 clickToSelect: false,
-                pageList: [8,10,25,50,100],
+                pageList: [5,10,15],
 
                 formatShowingRows: function(pageFrom, pageTo, totalRows){
                     //do nothing here, we don't want to show the text "showing x of y from..."
