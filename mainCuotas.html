@@ -22,7 +22,7 @@
 
 
     <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="./assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
 
@@ -181,55 +181,55 @@
                         <div class="nav-container">
                             <ul class="nav nav-icons" role="tablist">
                                 <li class="">
-                                    <a href="#description" role="tab" data-toggle="tab">
+                                    <a href="./mainUnidades">
                                         <i class="fa fa-bed"></i><br>
                                         Unidades
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                    <a href="./mainResidentes.html">
                                         <i class="fa fa-users"></i><br>
                                         Residentes
                                     </a>
                                   </li>
-                                <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                <!-- <li class="">
+                                    <a href="#main-comunicacion">
                                         <i class="fa fa-comments"></i><br>
                                         Comunicación
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                    <a href="./mainSolicitudes.html">
                                         <i class="fa fa-bell"></i><br>
                                         Solicitudes
                                     </a>
                                 </li>
                                 <li class="active">
-                                    <a href="" role="tab" data-toggle="tab">
+                                    <a href="#">
                                         <i class="fa fa-usd"></i><br>
                                         Cuotas
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                    <a href="./mainAmenidades.html">
                                         <i class="fa fa-trophy"></i><br>
                                         Amenidades
                                     </a>
                                 </li>
-                                <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                <!-- <li class="">
+                                    <a href="#main-documentos">
                                         <i class="fa fa-file-text"></i><br>
                                         Documentos
                                     </a>
-                                </li>
-                                <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                </li> -->
+                                <!-- <li class="">
+                                    <a href="#main-calendario">
                                         <i class="fa fa-calendar"></i><br>
                                         Calendario
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                    <a href="./mainEmpleados.html">
                                         <i class="fa fa-id-card"></i><br>
                                        Empleados
                                     </a>
@@ -249,6 +249,7 @@
 
                                     <table id="bootstrap-table" class="table">
                                         <thead>
+                                            <th data-field="id" class="text-center">Cuota</th>
                                             <th data-field="name" class="text-center">Cuota</th>
                                             <th data-field="balance" data-sortable="true" class="text-center">Saldo</th>
                                             <th data-field="ammount" data-sortable="true" class="text-center">Monto</th>
@@ -257,6 +258,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
+                                                <td>1</td>
                                                 <td>Mantenimiento</td>
                                                 <td class="text-danger text-center">-$258.00</td>
                                                 <td>$258</td>
@@ -264,6 +266,7 @@
                                                 <td></td>
                                             </tr>
                                             <tr>
+                                                <td>2</td>
                                                 <td>Rentas</td>
                                                 <td class="text-danger text-center">-$8500.00</td>
                                                 <td>$8500</td>
@@ -271,6 +274,7 @@
                                                 <td></td>
                                             </tr>
                                             <tr>
+                                                <td>3</td>
                                                 <td>Otras</td>
                                                 <td class="text-danger text-center">-$2500.00</td>
                                                 <td>$500</td>
@@ -278,6 +282,7 @@
                                                 <td></td>
                                             </tr>
                                             <tr>
+                                                <td>4</td>
                                                 <td>Extraordinarias</td>
                                                 <td class="text-danger text-center">-$405.00</td>
                                                 <td>$45</td>
@@ -411,20 +416,9 @@
 
         $().ready(function(){
             window.operateEvents = {
-                'click .view': function (e, value, row, index) {
-                    info = JSON.stringify(row);
-
-                    // swal('You click view icon, row: ', info);
-                    // console.log(info);
-                },
-                'click .edit': function (e, value, row, index) {
-                    info = JSON.stringify(row);
-
-                    swal('You click edit icon, row: ', info);
-                    console.log(info);
-                },
+                'click .view': function (e, value, row, index) {},
+                'click .edit': function (e, value, row, index) {},
                 'click .remove': function (e, value, row, index) {
-                    console.log(row);
                     $table.bootstrapTable('remove', {
                         field: 'id',
                         values: [row.id]

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+	<link rel="icon" type="image/png" href="./assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 	<title>Sueet - Residentes</title>
@@ -12,40 +12,41 @@
 
 
     <!-- Bootstrap core CSS     -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
 
     <!--  Light Bootstrap Dashboard core CSS    -->
-    <link href="../assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+    <link href="./assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="../assets/css/demo.css" rel="stylesheet" />
+    <link href="./assets/css/demo.css" rel="stylesheet" />
 
 
     <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="../assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-
+    <link href="./assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
 </head>
 <body>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="gray" data-image="../assets/img/apartment-image.jpg">
+    <div class="sidebar" data-color="gray" data-image="./assets/img/apartment-image.jpg">
 
-        <div class="logo text-center">
-            Sueet
+        <div style="padding: 0;" class="logo">
+            <a href="#" class="logo-text">
+                <img style="max-height: 40px; width: 80px;" src="./assets/img/2-horizontal-gris.png">
+            </a>
         </div>
-		<div class="logo logo-mini">
-			<a href="#" class="logo-text">
-				Sueet
-			</a>
-		</div>
+        <div style="padding: 0;" class="logo logo-mini">
+            <a href="#" class="logo-text">
+                <img style="max-height: 40px; width: 80px;" src="./assets/img/2-horizontal-gris.png">
+            </a>
+        </div>
 
-    	<div class="sidebar-wrapper">
+        <div class="sidebar-wrapper">
 
             <div class="user">
                 <div class="photo">
-                    <img src="../assets/img/andres-profile.jpg" />
+                    <img src="./assets/img/andres-profile.jpg" />
                 </div>
                 <div class="info">
                     <a data-toggle="collapse" href="#collapseExample" class="collapsed">
@@ -64,7 +65,7 @@
 
             <ul class="nav">
                 <li class="active">
-                    <a href="#">
+                    <a href="./index.html">
                         <i class="pe-7s-graph1"></i>
                         <p>Dashboard</p>
                     </a>
@@ -76,19 +77,19 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./viewProp.html">
                         <i class="pe-7s-home"></i>
                         <p>Propiedades</p>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#">
                         <i class="pe-7s-portfolio"></i>
                         <p>Empresa</p>
                     </a>
-                </li>
+                </li> -->
             </ul>
-    	</div>
+        </div>
     </div>
 
     <div class="main-panel">
@@ -179,55 +180,55 @@
                         <div class="nav-container">
                             <ul class="nav nav-icons" role="tablist">
                                 <li class="">
-                                    <a href="#description" role="tab" data-toggle="tab">
+                                    <a href="./mainUnidades.html">
                                         <i class="fa fa-bed"></i><br>
                                         Unidades
                                     </a>
                                 </li>
                                 <li class="active">
-                                    <a href="" role="tab" data-toggle="tab">
+                                    <a href="#">
                                         <i class="fa fa-users"></i><br>
                                         Residentes
                                     </a>
                                   </li>
-                                <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                <!-- <li class="">
+                                    <a href="#main-comunicacion">
                                         <i class="fa fa-comments"></i><br>
                                         Comunicación
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                    <a href="./mainSolicitudes.html">
                                         <i class="fa fa-bell"></i><br>
                                         Solicitudes
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                    <a href="./mainCuotas.html">
                                         <i class="fa fa-usd"></i><br>
                                         Cuotas
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                    <a href="./mainAmenidades.html">
                                         <i class="fa fa-trophy"></i><br>
                                         Amenidades
                                     </a>
                                 </li>
-                                <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                <!-- <li class="">
+                                    <a href="#main-documentos">
                                         <i class="fa fa-file-text"></i><br>
                                         Documentos
                                     </a>
-                                </li>
-                                <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                </li> -->
+                                <!-- <li class="">
+                                    <a href="#main-calendario">
                                         <i class="fa fa-calendar"></i><br>
                                         Calendario
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="">
-                                    <a href="" role="tab" data-toggle="tab">
+                                    <a href="./mainEmpleados.html">
                                         <i class="fa fa-id-card"></i><br>
                                        Empleados
                                     </a>
@@ -248,6 +249,7 @@
 
                                     <table id="bootstrap-table" class="table">
                                         <thead>
+                                            <th data-field="id" class="text-center">ID</th>
                                             <th data-field="photo" class="text-center">Foto</th>
                                             <th data-field="name" data-sortable="true" class="text-center">Residente</th>
                                             <th data-field="place" data-sortable="true" class="text-center">Unidad</th>
@@ -255,100 +257,136 @@
                                         </thead>
                                         <tbody>
                                             <tr>
+                                                <td>1</td>
                                                 <td>
-                                                    <img width="40px" height="40px" src="../assets/img/andres-profile.jpg" />
+                                                    <img width="40px" height="40px" src="./assets/img/andres-profile.jpg" />
                                                 </td>
-                                                <td>John Doe</td>
+                                                <td>Morris Gutkowski</td>
                                                 <td>Torre A - 01</td>
-                                                <td></td>
+                                                <td>
+                                                    
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>2</td>
                                                 <td>
-                                                    <img width="40px" height="40px" src="../assets/img/andres-profile.jpg" />
+                                                    <img width="40px" height="40px" src="./assets/img/andres-profile.jpg" />
                                                 </td>
-                                                <td>John Doe</td>
+                                                <td>Novella Johnson</td>
                                                 <td>Torre A - 02</td>
-                                                <td></td>
+                                                <td>
+                                                    
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>3</td>
                                                 <td>
-                                                    <img width="40px" height="40px" src="../assets/img/face-0.jpg" />
+                                                    <img width="40px" height="40px" src="./assets/img/face-0.jpg" />
                                                 </td>
-                                                <td>John Doe</td>
+                                                <td>Meredith Murphy</td>
                                                 <td>Torre A - 03</td>
-                                                <td></td>
+                                                <td>
+                                                    
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>4</td>
                                                 <td>
-                                                    <img width="40px" height="40px" src="../assets/img/andres-profile.jpg" />
+                                                    <img width="40px" height="40px" src="./assets/img/andres-profile.jpg" />
                                                 </td>
-                                                <td>John Doe</td>
+                                                <td>Kristin Padberg</td>
                                                 <td>Torre B - 01</td>
-                                                <td></td>
+                                                <td>
+                                                    
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>5</td>
                                                 <td>
-                                                    <img width="40px" height="40px" src="../assets/img/face-0.jpg" />
+                                                    <img width="40px" height="40px" src="./assets/img/face-0.jpg" />
                                                 </td>
-                                                <td>John Doe</td>
+                                                <td>Marianna Trantow</td>
                                                 <td>Torre B - 02</td>
-                                                <td></td>
+                                                <td>
+                                                    
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>6</td>
                                                 <td>
-                                                    <img width="40px" height="40px" src="../assets/img/andres-profile.jpg" />
+                                                    <img width="40px" height="40px" src="./assets/img/andres-profile.jpg" />
                                                 </td>
-                                                <td>John Doe</td>
+                                                <td>Prof. Reva Schoen</td>
                                                 <td>Torre B - 03</td>
-                                                <td></td>
+                                                <td>
+                                                    
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>7</td>
                                                 <td>
-                                                    <img width="40px" height="40px" src="../assets/img/face-0.jpg" />
+                                                    <img width="40px" height="40px" src="./assets/img/face-0.jpg" />
                                                 </td>
-                                                <td>John Doe</td>
+                                                <td>Evelyn Tillman</td>
                                                 <td>Torre C - 01</td>
-                                                <td></td>
+                                                <td>
+                                                    
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>8</td>
                                                 <td>
-                                                    <img width="40px" height="40px" src="../assets/img/andres-profile.jpg" />
+                                                    <img width="40px" height="40px" src="./assets/img/andres-profile.jpg" />
                                                 </td>
-                                                <td>John Doe</td>
+                                                <td>Alda Brown</td>
                                                 <td>Torre C - 02</td>
-                                                <td></td>
+                                                <td>
+                                                    
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>9</td>
                                                 <td>
-                                                    <img width="40px" height="40px" src="../assets/img/face-0.jpg" />
+                                                    <img width="40px" height="40px" src="./assets/img/face-0.jpg" />
                                                 </td>
-                                                <td>John Doe</td>
+                                                <td>Earnestine Walker</td>
                                                 <td>Torre C - 03</td>
-                                                <td></td>
+                                                <td>
+                                                    
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>10</td>
                                                 <td>
-                                                    <img width="40px" height="40px" src="../assets/img/andres-profile.jpg" />
+                                                    <img width="40px" height="40px" src="./assets/img/andres-profile.jpg" />
                                                 </td>
-                                                <td>John Doe</td>
+                                                <td>Clement Hirthe</td>
                                                 <td>Torre D - 01</td>
-                                                <td></td>
+                                                <td>
+                                                    
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>11</td>
                                                 <td>
-                                                    <img width="40px" height="40px" src="../assets/img/face-0.jpg" />
+                                                    <img width="40px" height="40px" src="./assets/img/face-0.jpg" />
                                                 </td>
-                                                <td>John Doe</td>
+                                                <td>Miss Carolanne Bins</td>
                                                 <td>Torre D - 02</td>
-                                                <td></td>
+                                                <td>
+                                                    
+                                                </td>
                                             </tr>
                                             <tr>
+                                                <td>12</td>
                                                 <td>
-                                                    <img width="40px" height="40px" src="../assets/img/andres-profile.jpg" />
+                                                    <img width="40px" height="40px" src="./assets/img/andres-profile.jpg" />
                                                 </td>
-                                                <td>John Doe</td>
+                                                <td>Nicolas Willms</td>
                                                 <td>Torre D - 03</td>
-                                                <td></td>
+                                                <td>
+                                                    
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -404,59 +442,59 @@
 
 </body>
     <!--   Core JS Files and PerfectScrollbar library inside jquery.ui   -->
-    <script src="../assets/js/jquery.min.js" type="text/javascript"></script>
-    <script src="../assets/js/jquery-ui.min.js" type="text/javascript"></script>
-	<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/js/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
 
 
 	<!--  Forms Validations Plugin -->
-	<script src="../assets/js/jquery.validate.min.js"></script>
+	<script src="./assets/js/jquery.validate.min.js"></script>
 
 	<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
-	<script src="../assets/js/moment.min.js"></script>
+	<script src="./assets/js/moment.min.js"></script>
 
     <!--  Date Time Picker Plugin is included in this js file -->
-    <script src="../assets/js/bootstrap-datetimepicker.js"></script>
+    <script src="./assets/js/bootstrap-datetimepicker.js"></script>
 
     <!--  Select Picker Plugin -->
-    <script src="../assets/js/bootstrap-selectpicker.js"></script>
+    <script src="./assets/js/bootstrap-selectpicker.js"></script>
 
 	<!--  Checkbox, Radio, Switch and Tags Input Plugins -->
-	<script src="../assets/js/bootstrap-checkbox-radio-switch-tags.js"></script>
+	<script src="./assets/js/bootstrap-checkbox-radio-switch-tags.js"></script>
 
 	<!--  Charts Plugin -->
-	<script src="../assets/js/chartist.min.js"></script>
+	<script src="./assets/js/chartist.min.js"></script>
 
     <!--  Notifications Plugin    -->
-    <script src="../assets/js/bootstrap-notify.js"></script>
+    <script src="./assets/js/bootstrap-notify.js"></script>
 
     <!-- Sweet Alert 2 plugin -->
-	<script src="../assets/js/sweetalert2.js"></script>
+	<script src="./assets/js/sweetalert2.js"></script>
 
     <!-- Vector Map plugin -->
-	<script src="../assets/js/jquery-jvectormap.js"></script>
+	<script src="./assets/js/jquery-jvectormap.js"></script>
 
     <!--  Google Maps Plugin    -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
 
 	<!-- Wizard Plugin    -->
-    <script src="../assets/js/jquery.bootstrap.wizard.min.js"></script>
+    <script src="./assets/js/jquery.bootstrap.wizard.min.js"></script>
 
     <!--  bootstrap Table Plugin    -->
-    <script src="../assets/js/bootstrap-table.js"></script>
+    <script src="./assets/js/bootstrap-table.js"></script>
 
 	<!--  Plugin for DataTables.net  -->
-    <script src="../assets/js/jquery.datatables.js"></script>
+    <script src="./assets/js/jquery.datatables.js"></script>
 
 
     <!--  Full Calendar Plugin    -->
-    <script src="../assets/js/fullcalendar.min.js"></script>
+    <script src="./assets/js/fullcalendar.min.js"></script>
 
     <!-- Light Bootstrap Dashboard Core javascript and methods -->
-	<script src="../assets/js/light-bootstrap-dashboard.js"></script>
+	<script src="./assets/js/light-bootstrap-dashboard.js"></script>
 
 	<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
-	<script src="../assets/js/demo.js"></script>
+	<script src="./assets/js/demo.js"></script>
 
     <script type="text/javascript">
         var $table = $('#bootstrap-table');
@@ -474,14 +512,8 @@
 
         $().ready(function(){
             window.operateEvents = {
-                'click .edit': function (e, value, row, index) {
-                    info = JSON.stringify(row);
-
-                    swal('You click edit icon, row: ', info);
-                    console.log(info);
-                },
+                'click .edit': function (e, value, row, index) {},
                 'click .remove': function (e, value, row, index) {
-                    console.log(row);
                     $table.bootstrapTable('remove', {
                         field: 'id',
                         values: [row.id]
