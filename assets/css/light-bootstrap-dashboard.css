@@ -8649,6 +8649,7 @@ star {
     padding-left: 0;
     padding-right: 0;
     color: #FFFFFF;
+    margin: 0;
   }
   .sidebar .navbar-form .input-group .form-control:focus,
   .bootstrap-navbar .navbar-form .input-group .form-control:focus {
