@@ -5361,6 +5361,7 @@ legend {
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child) {
   border-left: 0 none;
+  margin: 0;
 }
 
 .form-control[disabled],
