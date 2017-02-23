@@ -32,14 +32,16 @@
 <div class="wrapper">
     <div class="sidebar" data-color="gray" data-image="./assets/img/apartment-image.jpg">
 
-        <div class="logo text-center">
-            Sueet
+        <div style="padding: 0;" class="logo">
+            <a href="#" class="logo-text">
+                <img style="max-height: 40px; width: 80px;" src="./assets/img/2-horizontal-gris.png">
+            </a>
         </div>
-		<div class="logo logo-mini">
-			<a href="#" class="logo-text">
-				Sueet
-			</a>
-		</div>
+        <div style="padding: 0;" class="logo logo-mini">
+            <a href="#" class="logo-text">
+                <img style="max-height: 40px; width: 80px;" src="./assets/img/2-horizontal-gris.png">
+            </a>
+        </div>
 
     	<div class="sidebar-wrapper">
 
@@ -64,7 +66,7 @@
 
             <ul class="nav">
                 <li class="active">
-                    <a href="#">
+                    <a href="./index.html">
                         <i class="pe-7s-graph1"></i>
                         <p>Dashboard</p>
                     </a>
@@ -76,17 +78,17 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./viewProp.html">
                         <i class="pe-7s-home"></i>
                         <p>Propiedades</p>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#">
                         <i class="pe-7s-portfolio"></i>
                         <p>Empresa</p>
                     </a>
-                </li>
+                </li> -->
             </ul>
     	</div>
     </div>
@@ -770,7 +772,94 @@
                             </div> <!-- end solicitudes -->
 
                             <div class="tab-pane" id="main-cuotas">
-                                <p> Soon </p>
+
+                                <div class="card">
+
+                                    <div class="toolbar text-center">
+                                        <button style="margin-right: 10px;" class="btn btn-wd btn-fill">Agregar Cuota</button>
+                                    </div>
+
+                                    <table id="bootstrap-table" class="table">
+                                        <thead>
+                                            <th data-field="name" class="text-center">Cuota</th>
+                                            <th data-field="balance" data-sortable="true" class="text-center">Saldo</th>
+                                            <th data-field="ammount" data-sortable="true" class="text-center">Monto</th>
+                                            <th data-field="period" class="text-center">Periodo</th>
+                                            <th data-field="actions" class="td-actions text-right" data-events="operateEvents" data-formatter="operateFormatter">Acción</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Mantenimiento</td>
+                                                <td class="text-danger text-center">-$258.00</td>
+                                                <td>$258</td>
+                                                <td>Mensual</td>
+                                                <td>
+                                                    <a rel="tooltip" title="View" class="btn btn-simple btn-info btn-icon table-action view" href="./mainCuotas2.html">
+                                                        <i class="fa fa-home"></i>
+                                                    </a>
+                                                    <a rel="tooltip" title="Edit" class="btn btn-simple btn-warning btn-icon table-action edit" href="javascript:void(0)">
+                                                        <i class="fa fa-edit"></i>
+                                                    </a>
+                                                    <a rel="tooltip" title="Remove" class="btn btn-simple btn-danger btn-icon table-action remove" href="javascript:void(0)">
+                                                        <i class="fa fa-remove"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rentas</td>
+                                                <td class="text-danger text-center">-$8500.00</td>
+                                                <td>$8500</td>
+                                                <td>Mensual</td>
+                                                <td>
+                                                    <a rel="tooltip" title="View" class="btn btn-simple btn-info btn-icon table-action view" href="./mainCuotas2.html">
+                                                        <i class="fa fa-home"></i>
+                                                    </a>
+                                                    <a rel="tooltip" title="Edit" class="btn btn-simple btn-warning btn-icon table-action edit" href="javascript:void(0)">
+                                                        <i class="fa fa-edit"></i>
+                                                    </a>
+                                                    <a rel="tooltip" title="Remove" class="btn btn-simple btn-danger btn-icon table-action remove" href="javascript:void(0)">
+                                                        <i class="fa fa-remove"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Otras</td>
+                                                <td class="text-danger text-center">-$2500.00</td>
+                                                <td>$500</td>
+                                                <td>Semestral</td>
+                                                <td>
+                                                    <a rel="tooltip" title="View" class="btn btn-simple btn-info btn-icon table-action view" href="./mainCuotas2.html">
+                                                        <i class="fa fa-home"></i>
+                                                    </a>
+                                                    <a rel="tooltip" title="Edit" class="btn btn-simple btn-warning btn-icon table-action edit" href="javascript:void(0)">
+                                                        <i class="fa fa-edit"></i>
+                                                    </a>
+                                                    <a rel="tooltip" title="Remove" class="btn btn-simple btn-danger btn-icon table-action remove" href="javascript:void(0)">
+                                                        <i class="fa fa-remove"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Extraordinarias</td>
+                                                <td class="text-danger text-center">-$405.00</td>
+                                                <td>$45</td>
+                                                <td>Extraordinario</td>
+                                                <td>
+                                                    <a rel="tooltip" title="View" class="btn btn-simple btn-info btn-icon table-action view" href="./mainCuotas2.html">
+                                                        <i class="fa fa-home"></i>
+                                                    </a>
+                                                    <a rel="tooltip" title="Edit" class="btn btn-simple btn-warning btn-icon table-action edit" href="javascript:void(0)">
+                                                        <i class="fa fa-edit"></i>
+                                                    </a>
+                                                    <a rel="tooltip" title="Remove" class="btn btn-simple btn-danger btn-icon table-action remove" href="javascript:void(0)">
+                                                        <i class="fa fa-remove"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
                             </div> <!-- end cuotas -->
 
                             <div class="tab-pane" id="main-amenidades">
@@ -1035,7 +1124,7 @@
                 <nav class="pull-left">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="./index.html">
                                 Inicio
                             </a>
                         </li>
@@ -1045,15 +1134,15 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./viewProp.html">
                                 Propiedades
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#">
                                 Empresa
                             </a>
-                        </li>
+                        </li> -->
                         <!--  Agregar más links si se ocupan  -->
                     </ul>
                 </nav>
