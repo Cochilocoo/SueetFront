@@ -5,7 +5,7 @@
 	<link rel="icon" type="image/png" href="./assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Sueet - Login</title>
+	<title>Sueet - Registrate</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -44,8 +44,8 @@
             
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                   <a href="./sign-up.html">
-                        Registro
+                   <a href="./login.html">
+                        Login
                     </a>
                 </li>
             </ul>
@@ -61,11 +61,15 @@
             <div class="container">
                 <div class="row">                   
                     <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                        <form method="get" action="index.html">
+                        <form method="get" action="login.html">
                             
                             <div class="card card-hidden">
-                                <div class="header text-center">Login</div>
+                                <div class="header text-center">Registro</div>
                                 <div class="content">
+                                    <div class="form-group">
+                                        <label>Nombre</label>
+                                        <input type="name" placeholder="Ingresa tu Nombre" class="form-control">
+                                    </div>
                                     <div class="form-group">
                                         <label>Correo</label>
                                         <input type="email" placeholder="Ingresa tu Correo" class="form-control">
@@ -74,9 +78,13 @@
                                         <label>Contraseña</label>
                                         <input type="password" placeholder="Ingresa tu Contraseña" class="form-control">
                                     </div>
+                                    <div class="form-group">
+                                        <label>Confirmar Contraseña</label>
+                                        <input type="password" placeholder="Confirma tu Contraseña" class="form-control">
+                                    </div>
                                 </div>
                                 <div class="footer text-center">
-                                    <button type="submit" class="btn btn-fill btn-warning btn-wd">Login</button>
+                                    <button type="submit" class="btn btn-fill btn-warning btn-wd">Registrate</button>
                                 </div>
                             </div>
                                 

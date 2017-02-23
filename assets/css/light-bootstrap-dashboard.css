@@ -5256,6 +5256,7 @@ legend {
   height: 40px;
   -webkit-box-shadow: none;
   box-shadow: none;
+  margin: 10px;
 }
 .form-control:focus {
   background-color: #FFFFFF;

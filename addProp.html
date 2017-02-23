@@ -65,8 +65,8 @@
             </div>
 
             <ul class="nav">
-                <li class="active">
-                    <a href="#">
+                <li>
+                    <a href="./index.html">
                         <i class="pe-7s-graph1"></i>
                         <p>Dashboard</p>
                     </a>
@@ -77,8 +77,8 @@
                         <p>Mensajes</p>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li class="active">
+                    <a href="./viewProp.html">
                         <i class="pe-7s-home"></i>
                         <p>Propiedades</p>
                     </a>
@@ -187,7 +187,11 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Nombre</label>
                                     <div class="col-sm-10">
-                                        <input type="text" placeholder="Nombre de la propiedad" class="form-control">
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <input type="text" placeholder="Nombre de la propiedad" class="form-control">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -197,7 +201,7 @@
                                         <label class="checkbox checkbox-inline">
                                             <input type="checkbox" data-toggle="checkbox" value="option1">Comercial
                                         </label>
-                                        <label class="checkbox checkbox-inline">
+                                        <label class="checkbox checkbox-inline checked">
                                             <input type="checkbox" data-toggle="checkbox" value="option2">Residencial
                                         </label>
                                    </div>
@@ -205,9 +209,13 @@
 
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Dirección</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" placeholder="Buscar..." class="form-control">
-                                        <span class="help-block">Busca una dirección y se llenaran los sub-campos a continuación.</span>
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <div class="col-sm-10">
+                                                <input type="text" placeholder="Buscar..." class="form-control">
+                                                <span class="help-block">Busca una dirección y se llenaran los sub-campos a continuación.</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -215,7 +223,7 @@
                                     <label class="col-sm-2 control-label"></label>
                                     <div class="col-sm-10">
                                         <div class="row">
-                                            <div class="col-md-9">
+                                            <div class="col-md-7">
                                                 <input type="text" placeholder="Calle" class="form-control">
                                             </div>
 
@@ -234,11 +242,11 @@
                                                 <input type="text" placeholder="Colonia" class="form-control">
                                             </div>
 
-                                            <div class="col-md-3">
+                                            <div class="col-md-2">
                                                 <input type="text" placeholder="Código Postal" class="form-control">
                                             </div>
 
-                                            <div class="col-md-3">
+                                            <div class="col-md-2">
                                                 <input type="text" placeholder="Ciudad" class="form-control">
                                             </div>
                                         </div>
@@ -249,7 +257,7 @@
                                     <label class="col-sm-2 control-label"></label>
                                     <div class="col-sm-10">
                                         <div class="row">
-                                            <div class="col-md-9">
+                                            <div class="col-md-7">
                                                 <input type="text" placeholder="Estado" class="form-control">
                                             </div>
 
@@ -262,7 +270,11 @@
 
                                 <div class="form-group">
                                     <div class="col-sm-10 col-md-offset-2">
-                                        <div id="regularMap" class="map"></div>
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <div id="regularMap" class="map" style="min-height: 500px;"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -270,7 +282,7 @@
                                     <label class="col-sm-2 control-label">Sección 1</label>
                                     <div class="col-sm-10">
                                         <div class="row">
-                                            <div class="col-md-9">
+                                            <div class="col-md-7">
                                                 <input type="text" placeholder="Nombre de la sección" class="form-control">
                                             </div>
 
@@ -285,7 +297,7 @@
                                     <label class="col-sm-2 control-label">Sección 2</label>
                                     <div class="col-sm-10">
                                         <div class="row">
-                                            <div class="col-md-9">
+                                            <div class="col-md-7">
                                                 <input type="text" placeholder="Nombre de la sección" class="form-control">
                                             </div>
 
@@ -299,13 +311,23 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Imágen</label>
                                     <div class="col-sm-10">
-                                        <button class="btn btn-sm btn-default btn-fill btn-round">Seleccionar Archivo</button>
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <input type="file" name="picture" class="form-control">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="footer text-center">
-                                    <button class="btn btn-danger btn-fill btn-wd">Cancelar</button>
-                                    <button type="submit" class="btn btn-info btn-fill btn-wd">Crear</button>
+                                <div class="footer">
+                                    <div class="col-md-10 col-md-offset-2">
+                                        <div class="row">
+                                            <div class="col-md-9">
+                                                <button style="margin: 10px 0;" class="pull-right btn btn-danger btn-fill btn-wd">Cancelar</button>
+                                                <button style="margin: 10px;" type="submit" class="pull-right btn btn-info btn-fill btn-wd">Crear</button>      
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </fieldset>
@@ -324,7 +346,7 @@
                 <nav class="pull-left">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="./index.html">
                                 Inicio
                             </a>
                         </li>
@@ -334,7 +356,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./viewProp.html">
                                 Propiedades
                             </a>
                         </li>
