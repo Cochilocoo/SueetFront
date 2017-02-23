@@ -5256,6 +5256,7 @@ legend {
   height: 40px;
   -webkit-box-shadow: none;
   box-shadow: none;
+  margin: 10px;
 }
 .form-control:focus {
   background-color: #FFFFFF;
@@ -8648,6 +8649,7 @@ star {
     padding-left: 0;
     padding-right: 0;
     color: #FFFFFF;
+    margin: 0;
   }
   .sidebar .navbar-form .input-group .form-control:focus,
   .bootstrap-navbar .navbar-form .input-group .form-control:focus {
